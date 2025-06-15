@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="chatroom-container">
+
+        <!-- Main chat card -->
+        <div class="chat-card">
+            <div class="chat-header">Mrinal Chatroom</div>
+
+            <!-- Dynamic Chat Messages -->
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be loaded here by JS -->
+            </div>
+
+            <!-- Message Form -->
+            <form id="chat-form" class="chat-input">
+                <input type="text" name="message" id="message" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Active/Inactive Users -->
+        <div class="userlist-card">
+            <h3>Users</h3>
+            <ul class="userlist" id="userlist">
+                <!-- Users will be loaded here by JS -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- JS for AJAX -->
+    <script src="js/ajax.js"></script>
+</body>
+
+</html>
